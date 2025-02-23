@@ -1,0 +1,24 @@
+﻿  ai0.cpp
+D:\PPT\C++\大作业\Othello\Othello\ai0.cpp(203,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\ai0.cpp(266,17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\ai0.cpp(272,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  ai1.cpp
+D:\PPT\C++\大作业\Othello\Othello\ai1.cpp(270,14): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  ai2.cpp
+D:\PPT\C++\大作业\Othello\Othello\ai2.cpp(148,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  ai3.cpp
+  ai4.cpp
+  mini.cpp
+  Minimax.cpp
+D:\PPT\C++\大作业\Othello\Othello\Minimax.cpp(383,37): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\Minimax.cpp(384,37): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\Minimax.cpp(406,14): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\Minimax.cpp(407,14): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  人机模式.cpp
+  落子函数.cpp
+D:\PPT\C++\大作业\Othello\Othello\落子函数.cpp(203,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\落子函数.cpp(266,17): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\PPT\C++\大作业\Othello\Othello\落子函数.cpp(272,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+D:\PPT\C++\大作业\Othello\Othello\人机模式.cpp(781,1): warning C4715: “isValidMove”: 不是所有的控件路径都返回值
+  Othello.vcxproj -> D:\PPT\C++\大作业\Othello\x64\Debug\Othello.exe
