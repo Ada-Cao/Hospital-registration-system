@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>SmallHospital.png</file>
+        <file>Patient.png</file>
+        <file>Reception.png</file>
+        <file>Outpatient.png</file>
+    </qresource>
+</RCC>

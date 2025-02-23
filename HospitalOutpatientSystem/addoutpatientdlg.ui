@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddOutpatientDlg</class>
+ <widget class="QDialog" name="AddOutpatientDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>650</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_Outpatient">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>881</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>门诊号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>值班医生工号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>接诊日期</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>接诊时间</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>容量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊地址</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊联系电话</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="labe_AddInformation">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>0</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>门诊信息：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_OutpatientID">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>420</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>门诊号</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_OutpatientID">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>420</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_OutpatientName">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>420</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>门诊名称</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_OutpatientName">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>420</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DoctorID">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>420</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>值班医生工号</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_DoctorID">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>420</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RecptionDate">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>500</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>接诊日期</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ReceptionTime">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>500</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>接诊时间</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_ReceptionDate">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>500</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>16</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2024</year>
+     <month>9</month>
+     <day>10</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2024</year>
+     <month>9</month>
+     <day>10</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Receptiontime">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>496</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>上午</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>下午</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_Capacity">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>500</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>容量</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_Capacity">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>490</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>200</number>
+   </property>
+   <property name="value">
+    <number>40</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_OutpatientAddress">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>580</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>门诊地址</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_OutpatientAddress">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>580</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>南京市鼓楼区丁家桥87号</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>南京市鼓楼区湖南路18号</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>南京市鼓楼区新模范马路3号</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>南京市江北新区健民路211号</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_OutpatientPhone">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>580</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>门诊联系电话</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_OutpatientPhone">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>580</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_DeleteOutpatient">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>650</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>删除门诊</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Image">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>0</y>
+     <width>69</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Outpatient.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>AddOutpatientDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>AddOutpatientDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

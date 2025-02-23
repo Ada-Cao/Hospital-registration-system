@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchByPatientNameDlg</class>
+ <widget class="QDialog" name="SearchByPatientNameDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>540</y>
+     <width>181</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ReceptionInformation">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>预约情况：</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_PatientReception">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>761</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>门诊号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>值班医生工号</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>就诊日期</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>就诊时间</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>容量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊地址</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊联系电话</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>SearchByPatientNameDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>SearchByPatientNameDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

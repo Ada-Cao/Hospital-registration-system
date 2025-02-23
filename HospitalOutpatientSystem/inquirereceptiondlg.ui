@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InquireReceptionDlg</class>
+ <widget class="QDialog" name="InquireReceptionDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>660</y>
+     <width>181</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labe_ReceptionInformation">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>0</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Modern No. 20</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>预约信息：</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEdit_ReceptionDate">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>430</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="dateTime">
+    <datetime>
+     <hour>0</hour>
+     <minute>0</minute>
+     <second>0</second>
+     <year>2024</year>
+     <month>9</month>
+     <day>10</day>
+    </datetime>
+   </property>
+   <property name="date">
+    <date>
+     <year>2024</year>
+     <month>9</month>
+     <day>10</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_RecptionDate">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>440</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>接诊日期</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_Reception">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>881</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>就诊人姓名</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>就诊人性别</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>就诊人年龄</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>就诊人联系电话</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊名称</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>接诊日期</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>接诊时间</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>门诊地址</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_OutpatientName">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>门诊名称</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ReceptionTime">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>440</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>接诊时间</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_Receptiontime">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>430</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>上午</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>下午</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_PatientPhone">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>600</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PatientPhone">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>600</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>就诊人联系电话</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_OutpatientName">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>430</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SearchByOutpatient">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>420</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>按门诊信息查询</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PatientName">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>520</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>就诊人姓名</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SearchByPatientName">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>510</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>按就诊人姓名查询</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_PatientName">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>520</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_SearchByPatientPhone">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>590</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>按就诊人电话查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_DeleteReception">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>590</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>true</underline>
+     <strikeout>false</strikeout>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="text">
+    <string>取消预约</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_image">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>69</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Reception.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>InquireReceptionDlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>InquireReceptionDlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
